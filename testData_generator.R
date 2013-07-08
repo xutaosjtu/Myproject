@@ -22,7 +22,7 @@ tmp = mapply(cost, mean = 30,link.bus)
 ticket.train  = matrix(tmp, ncol = 10)
 
 ## within city
-places = matrix()
+places = data.frame(name, price, time, start, end)
 
 ## assume the price is constant
 hotel.mean = rnorm(10, mean = 50, sd =10)
